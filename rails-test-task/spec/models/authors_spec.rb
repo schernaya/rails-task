@@ -11,5 +11,8 @@ RSpec.describe Author, type: :model do
     it {
       is_expected.to validate_length_of(:name).is_at_most(25)
     }
+    it {
+      should respond_to(:books)
+    }
   end
 end
