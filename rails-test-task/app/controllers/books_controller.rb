@@ -6,9 +6,6 @@ class BooksController < ApplicationController
     @books = params[:search] ? Book.with_authors(params[:search]) : Book.all
   end
 
-  def show
-  end
-
   # GET /books/1 or /books/1.json
   def show
   end
